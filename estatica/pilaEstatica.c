@@ -8,7 +8,7 @@ int pilaLlena(const tPila *p, unsigned cantBytes) {
     return p->tope < cantBytes + sizeof(unsigned);
 }
 
-int ponerEnPila(tPila *p, const void *d, unsigned cantBytes) {
+int apilar(tPila *p, const void *d, unsigned cantBytes) {
     if (p->tope < cantBytes + sizeof(unsigned))
         return 0;
 
@@ -36,7 +36,7 @@ int pilaVacia(const tPila *p) {
     return p->tope == TAM_PILA;
 }
 
-int sacarDePila(tPila *p, void *d, unsigned cantBytes) {
+int desapilar(tPila *p, void *d, unsigned cantBytes) {
     unsigned tamInfo;
 
     if (p->tope == TAM_PILA)

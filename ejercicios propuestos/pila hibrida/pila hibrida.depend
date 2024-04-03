@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1712118365 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejercicios propuestos\pila hibrida\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilaHibrida.h"
+
+1712113919 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejercicios propuestos\pila hibrida\pilahibrida.c
+	"pilaHibrida.h"
+
+1712093083 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejercicios propuestos\pila hibrida\pilahibrida.h
+	<stdlib.h>
+	<string.h>
+

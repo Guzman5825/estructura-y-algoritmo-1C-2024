@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1706734806 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\ejercicio2pila\piladinamica.c
+	"pilaDinamica.h"
+
+1706732977 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\ejercicio2pila\piladinamica.h
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+
+1706804789 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\ejercicio2pila\productos.c
+
+1706734806 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\dinamica\piladinamica.c
+	"pilaDinamica.h"
+
+1706732977 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\dinamica\piladinamica.h
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+
+1706825084 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmos\ejercicio2pila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../dinamica/pilaDinamica.h"
+
+1706804789 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\productos.c
+
+1712082739 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.c
+	"pilaEstatica.h"
+
+1712153389 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.h
+	<string.h>
+
+1712153317 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../estatica/pilaEstatica.h"
+
