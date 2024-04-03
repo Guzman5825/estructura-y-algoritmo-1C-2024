@@ -24,41 +24,47 @@ return *num1-*num2;
 void ejercicio6(){
     // estrategia, utilizar 2 pila, 1 cargada con los valores,  la otra como una pila auxiliar ,mandadole a la pila auxiliar
     //los valores o datos menores , creando asi en la pila auxiliar en donde cada vez se posicion a lo ultimo de la pila los valores menores
-    int numeros [10]={10,5,9,1,15,12,19,20,21,13};
+    int topeOrd,topeAux, numeros [10]={10,5,9,1,15,12,19,20,21,13};
 
-    tPila pila1,pilaAux;
 
-    crearPila(&pila1);
+    tPila pilaOrd,pilaAux;
+
+
+    crearPila(&pilaOrd);
     crearPila(&pilaAux);
 
-    for(int i=0;i<10 && !pilaLlena(&pila1,sizeof(int) ) ;i++)
-        apilar(&pila1,&(numeros[i]) ,sizeof(int) );
-
-    int datoComparacion,datoAMover;
-
-    if(!pilaVacia(&pila1)){ //el primer dato
-        desapilar(&pila1,&datoAMover,sizeof(int) ); // se puede meter pila llena
-        apilar(&pila1,&datoAMover,sizeof(int));
-    }
-    //////////////////////////////
-    while(!pilaVacia(&pila1)){  //entra en el bucle
-        desapilar(&pila1,&datoComparacion,sizeof(int) );
-
-        verTope(&pilaAux,&datoAMover,sizeof(int) );
-
-        while(!pilaVacia(&pilaAux) && cmpInt(&datoComparacion,&datoAMover)<=0){
-            //imprimirDatoNumero(&datoAMover);
-            desapilar(&pilaAux,&datoAMover,sizeof(int) );
-            apilar(&pila1,&datoAMover,sizeof(int));     //lo mismo pila llena aca tambien
-            verTope(&pilaAux,&datoAMover,sizeof(int) );
+    apilar(&pilaOrd,&(numeros[0]) ,sizeof(int) );
+    for(int i=1;i<10;i++){    //poner la condicion de pila llena
+        verTope(&pilaOrd,&topeOrd,sizeof(int));
+        if(numeros[i]<topeOrd){
+            while(!pilaVacia(&pilaOrd) && numeros[i]<topeOrd){  //condicion de pila vacia
+                desapilar(&pilaOrd,&topeOrd,sizeof(int));
+                apilar(&pilaAux,&topeOrd,sizeof(int));
+                verTope(&pilaOrd,&topeOrd,sizeof(int));
+            }
+            apilar(&pilaOrd,&numeros[i],sizeof(int));
+        } else{
+            verTope(&pilaAux,&topeAux,sizeof(int));
+            if(numeros[i]<topeAux)
+                apilar(&pilaOrd,&numeros[i],sizeof(int) );
+            else{
+                while(!pilaVacia(&pilaAux) &&numeros[i]>topeAux){
+                    desapilar(&pilaAux,&topeAux,sizeof(int));
+                    apilar(&pilaOrd,&topeAux,sizeof(int));
+                    verTope(&pilaAux,&topeAux,sizeof(int));
+                }
+                apilar(&pilaOrd,&numeros[i],sizeof(int));
+            }
         }
+    }
 
-        apilar(&pilaAux,&datoComparacion,sizeof(int) ); //y aca tambien pila llena
-
+    while(!pilaVacia(&pilaAux)){        //los elementos restantes de la pila auxiliar
+        desapilar(&pilaAux,&topeAux,sizeof(int));
+        apilar(&pilaOrd,&topeAux,sizeof(int));
     }
 
     puts("valores ordenados:");
-    desapilarYmostrarDatos(&pilaAux);
+    desapilarYmostrarDatos(&pilaOrd);
 }
 
 
@@ -152,7 +158,11 @@ puts("");
 
 int main()
 {
-    //ejercicio6();
+    puts("ejercicio 6");
+    ejercicio6();
+    /**
+    puts("\nejercicio 7");
     ejercicio7();
+    */
     return 0;
 }

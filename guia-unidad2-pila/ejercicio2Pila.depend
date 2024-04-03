@@ -24,13 +24,13 @@
 
 1706804789 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\productos.c
 
-1712082739 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.c
+1712153389 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.c
 	"pilaEstatica.h"
 
 1712153389 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.h
 	<string.h>
 
-1712153317 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\main.c
+1712155487 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\main.c
 	<stdio.h>
 	<stdlib.h>
 	"../estatica/pilaEstatica.h"
