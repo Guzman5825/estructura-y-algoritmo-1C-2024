@@ -33,30 +33,22 @@ void ejercicio6(){
     crearPila(&pilaOrd);
     crearPila(&pilaAux);
 
-    apilar(&pilaOrd,&(numeros[0]) ,sizeof(int) );
-    for(int i=1;i<10;i++){    //poner la condicion de pila llena
+    for(int i=0;i<10;i++){    //poner la condicion de pila llena
         verTope(&pilaOrd,&topeOrd,sizeof(int));
-        if(numeros[i]<topeOrd){
-            while(!pilaVacia(&pilaOrd) && numeros[i]<topeOrd){  //condicion de pila vacia
-                desapilar(&pilaOrd,&topeOrd,sizeof(int));
-                apilar(&pilaAux,&topeOrd,sizeof(int));
-                verTope(&pilaOrd,&topeOrd,sizeof(int));
+        while(!pilaVacia(&pilaOrd) && numeros[i]<topeOrd){  //condicion de pila vacia
+            desapilar(&pilaOrd,&topeOrd,sizeof(int));
+            apilar(&pilaAux,&topeOrd,sizeof(int));
+            verTope(&pilaOrd,&topeOrd,sizeof(int));
             }
-            apilar(&pilaOrd,&numeros[i],sizeof(int));
-        } else{
+        verTope(&pilaAux,&topeAux,sizeof(int));
+        while(!pilaVacia(&pilaAux) &&numeros[i]>topeAux){
+            desapilar(&pilaAux,&topeAux,sizeof(int));
+            apilar(&pilaOrd,&topeAux,sizeof(int));
             verTope(&pilaAux,&topeAux,sizeof(int));
-            if(numeros[i]<topeAux)
-                apilar(&pilaOrd,&numeros[i],sizeof(int) );
-            else{
-                while(!pilaVacia(&pilaAux) &&numeros[i]>topeAux){
-                    desapilar(&pilaAux,&topeAux,sizeof(int));
-                    apilar(&pilaOrd,&topeAux,sizeof(int));
-                    verTope(&pilaAux,&topeAux,sizeof(int));
-                }
-                apilar(&pilaOrd,&numeros[i],sizeof(int));
             }
+        apilar(&pilaOrd,&numeros[i],sizeof(int));
         }
-    }
+
 
     while(!pilaVacia(&pilaAux)){        //los elementos restantes de la pila auxiliar
         desapilar(&pilaAux,&topeAux,sizeof(int));
