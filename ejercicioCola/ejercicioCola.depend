@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1713363535 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\colaestatica.c
+	"colaEstatica.h"
+
+1713363535 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\colaestatica.h
+	<string.h>
+
+1713365477 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejerciciocola\producto.c
+	"producto.h"
+
+1713365449 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejerciciocola\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../estatica/colaEstatica.h"
+	"producto.h"
+
+1713365467 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\ejerciciocola\producto.h
+	<stdio.h>
+	<stdlib.h>
+

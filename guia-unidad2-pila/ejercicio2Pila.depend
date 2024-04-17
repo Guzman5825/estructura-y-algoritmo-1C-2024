@@ -27,11 +27,26 @@
 1712153389 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.c
 	"pilaEstatica.h"
 
-1712153389 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.h
+1712762923 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\estatica\pilaestatica.h
 	<string.h>
 
-1712156233 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\main.c
+1712764788 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\main.c
 	<stdio.h>
 	<stdlib.h>
-	"../estatica/pilaEstatica.h"
+	"funciones.h"
+
+1712764807 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\funciones.c
+	"funciones.h"
+
+1712764833 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\guia-unidad2-pila\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"../dinamica/pilaDinamica.h"
+
+1712763063 source:c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\dinamica\piladinamica.c
+	"pilaDinamica.h"
+
+1712763044 c:\users\usuario\desktop\codeblocks ejercicios\estructura y algoritmo 2\estructura-y-algoritmo-1c-2024\dinamica\piladinamica.h
+	<stdlib.h>
+	<string.h>
 

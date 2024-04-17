@@ -6,7 +6,7 @@
 #define minimo(X, Y) ((X) <= (Y) ? (X) : (Y))
 #define VERDADERO 1
 #define FALSO 0
-#define TAM_PILA 1000
+#define TAM_PILA 10000
 
 typedef struct
 {
